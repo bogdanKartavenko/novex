@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
 @import "./reset.scss";
 @import "./variables.scss";
 @import "./mixins.scss";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/title";
+@import "./components/input";
+@import "./components/investors";
+@import "./components/question";
+@import "./components/about";
+@import "./components/also";
+@import "./components/footer";
+

@@ -1,0 +1,28 @@
+.investors {
+    background-color: $white2;
+    min-height: 286px;
+    padding: 90px 20px 61px 20px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        margin-bottom: 25px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 56px;
+    }
+    &__box--bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 611px;
+        width: 100%;
+    }
+}

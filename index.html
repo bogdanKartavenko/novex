@@ -1,13 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Novex</title>
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__wrapper wrapper">
+                <a class="nav__link" href="#">
+                    <img class="logo nav__logo" src="assets/Logo.svg" alt="Logo">
+                </a>
+                <ul class="menu nav__menu">
+                    <li class="nav__list">
+                        <a class="nav__link" href="">Blog</a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="">Careers</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__wrapper wrapper">
+            <div class="header__box">
+                <h1 class="title header__title">The Reactive Backend for your Reactive Apps</h1>
+                <p class="subtitle header__subtitle">We are going to launch our website very soon. Get notify when it’s
+                    ready
+                </p>
+                <form class="form header__form">
+                    <input class="input form__input" type="email" placeholder="Email" required>
+                    <button class="buttom form__buttom">Notify me</button>
+                </form>
+            </div>
+        </div>
+        <div class="anchor__wrapper wrapper">
+            <div class="anchor">
+                <a class="anchor__link" href="#anchor">
+                    <img class="anchor__img" src="assets/Arrow.svg" alt="arrow">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="investors">
+        <div class="investors__wrapper wrapper">
+            <span class="investors__title subject">Our investors</span>
+            <span class="investors__subtitle text">Proudly backed by...</span>
+        </div>
+        <ul class="investors__box wrapper">
+            <li class="investors__list">
+                <a href="https://bitbucket.org/"><img src="assets/bitbucket.svg" alt="bitbucket"></a>
+            </li>
+            <li class="investors__list">
+                <a href="https://azure.microsoft.com/ru-ru/"><img src="assets/microsoft.svg" alt="microsoft"></a>
+            </li>
+            <li class="investors__list">
+                <a href=""><img src="assets/bamboo.svg" alt="bamboo"></a>
+            </li>
+            <li class="investors__list">
+                <a href="https://ru.wikipedia.org/wiki/Confluence"><img src="assets/confluence.svg"
+                        alt="confluence"></a>
+            </li>
+        </ul>
+        <ul class="investors__box--bottom wrapper">
+            <li class="investors__list">
+                <a href="https://www.atlassian.com/"><img src="assets/atlassian.svg" alt="atlassian"></a>
+            </li>
+            <li class="investors__list">
+                <a href="https://www.pioneer.eu/"><img src="assets/pioneer.svg" alt="pioneer"></a>
+            </li>
+            <li class="investors__list">
+                <a href="https://stackoverflow.com/"><img src="assets/stackOverflow.svg" alt="stackOverflow"></a>
+            </li>
+        </ul>
+    </section>
+    <section class="question">
+        <div class="question__wrapper wrapper">
+            <img class="question__img" src="assets/Image3.svg" alt="image">
+            <div class="question__box">
+                <div class="question__title title">Want to try Novex?</div>
+                <div class="question__subtitle subtitle">Sign up for our alpha/beta waitlist, <br>
+                    and we'll get you in as soon as we can!
+                </div>
+                <form class="question__form form">
+                    <input class="input question__input" type="email" placeholder="Email" required>
+                    <button class="buttom question__buttom">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__wrapper">
+            <img class="about__foto" src="assets/aboutFoto.png" alt="Foto">
+            <span class="about__name">Bob Jonson</span>
+            <div class="about__border"></div>
+        </div>
+        <div class="about__text">
+            <img class="about__img" src="assets/about1.svg" alt="">
+            Loved the onboarding experience!... As soon as I signed up...I got a call regarding my verification
+            procedure, which was also swiftly taken care of. I then received a call to take me around the
+            interface.
+            <img class="about__img" src="assets/about2.svg" alt="">
+        </div>
+    </section>
+    <section class="also">
+        <div class="also__wrapper wrapper">
+            <div class="also__box">
+                <span class="also__title title">Also... <br>
+                    we're hiring</span>
+                <p class="also__subtitle text">Want to help us shape how the Internet will be built? <br>
+                    Then welcome on board!
+                    <img class="also__border" src="assets/border.svg" alt="border">
+                </p>
+                <buttom class="also__buttom">See vacancies</buttom>
+            </div>
+            <ul>
+                <li class="also__list also__list--foto">
+                    <img src="assets/also1.png" alt="foto">
+                </li>
+                <li class="also__list also__list--foto">
+                    <img src="assets/also2.png" alt="foto">
+                </li>
+                <li class="also__list also__list--foto">
+                    <img src="assets/also3.png" alt="foto">
+                </li>
+                <li class="also__list also__list--foto">
+                    <img src="assets/also4.png" alt="foto">
+                </li>
+                <li class="also__list also__list--plus-top">
+                    <img src="assets/plus.svg" alt="add">
+                </li>
+                <li class="also__list also__list--plus-bottom">
+                    <img src="assets/plus.svg" alt="add">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper wrapper">
+            <img class="footer__logo" src="assets/Logo.svg" alt="Logo">
+            <ul class="footer__icon">
+                <li class="footer__list">
+                    <a class="footer__link" href="https://twitter.com/">
+                        <svg class="svg">
+                            <use class="svg__use" href="#instagram"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a class="footer__link" href="https://www.facebook.com/">
+                        <svg class="svg">
+                            <use class="svg__use" href="#instagram"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a class="footer__link" href="https://www.instagram.com/">
+                        <svg class="svg">
+                            <use class="svg__use" href="#instagram"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a class="footer__link" href="https://discord.com/">
+                        <svg class="svg">
+                            <use class="svg__use" href="#instagram"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__border wrapper"></div>
+        <div class="footer__wrapper wrapper">
+            <span class="footer__data">Copyrighting Novex 2022</span>
+            <ul class="footer__menu">
+                <li class="footer__list">
+                    <a class="footer__link" href="#">Blog</a>
+                </li>
+                <li class="footer__list">
+                    <a class="footer__link" href="#">Careers</a>
+                </li>
+                <li class="footer__list">
+                    <a class="footer__link" href="#">Terms</a>
+                </li>
+            </ul>
+        </div>
+        <p class="footer__anchor"><a name="anchor"></a></p>
+    </footer>
+
+    <!-- SVG -->
+
+    <svg style="display: none;">
+        <g id="twitter"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.804 1.71437C14.5964 1.79637 14.3494 1.86362 14.0797 1.83273C13.7746 1.79778 13.5139 1.64686 13.2861 1.41537C12.9726 1.09881 12.5286 0.933529 11.9957 0.863083C11.9784 0.861112 11.9638 0.85876 11.9547 0.857236C11.9423 0.85516 11.9301 0.852875 11.9211 0.851179C11.9175 0.850503 11.9141 0.849859 11.9108 0.849243C11.8955 0.846345 11.8834 0.844038 11.8693 0.841668C11.8361 0.836091 11.8099 0.833374 11.7888 0.833374C11.6128 0.833374 11.5552 0.839173 11.3233 0.863811C10.9693 0.901417 10.7839 0.971039 10.4827 1.10902L14.804 1.71437ZM14.804 1.71437C14.6937 1.81391 14.5744 1.90773 14.4462 1.9961L14.0643 2.25927L14.2894 2.64486C14.2918 2.65033 14.2955 2.65845 14.2995 2.66697C14.3055 2.67968 14.3147 2.69804 14.3268 2.71887L14.5217 3.05278L14.8939 2.94821C14.9371 2.93607 14.9803 2.92393 15.0235 2.91179C14.9303 2.99326 14.8343 3.07171 14.7354 3.14714C14.65 3.21226 14.5537 3.30468 14.4868 3.43943C14.4188 3.57628 14.4027 3.7131 14.4061 3.8321L14.4061 3.83221C14.4435 5.12974 14.2092 6.37478 13.7211 7.57501C12.9065 9.57513 11.6321 11.1393 9.77922 12.116C7.42997 13.3535 5.02697 13.4851 2.57921 12.5785C3.69801 12.3844 4.74773 11.9164 5.72697 11.1557L6.72403 10.381L5.46697 10.263C4.79527 10.1999 4.26559 10.001 3.85018 9.68569C3.6007 9.49631 3.38133 9.25648 3.19419 8.95969C3.34577 8.94754 3.50409 8.92665 3.64438 8.90813C3.71264 8.89912 3.77663 8.89068 3.8335 8.88408L4.27585 8.83273V8.38741C4.27585 8.38643 4.27585 8.3853 4.27586 8.38402C4.27593 8.36403 4.27613 8.30747 4.26306 8.24026L4.20257 7.92932L3.89559 7.85118C3.26014 7.68945 2.7442 7.35912 2.345 6.83905C2.09789 6.51714 1.92657 6.17038 1.83195 5.79035C2.17446 5.89661 2.45724 5.93673 2.72736 5.89559L3.89617 5.71757L2.95429 5.00296C1.82923 4.14937 1.61052 2.86009 1.86518 1.8903C3.62486 3.74019 5.80162 4.77983 8.40397 4.96616L9.01602 5.00998L8.93534 4.40169C8.93096 4.36866 8.92797 4.34052 8.92492 4.31093L8.92418 4.30376C8.92148 4.27743 8.91802 4.2438 8.91338 4.21037L8.91237 4.20314L8.91116 4.19594C8.6917 2.89624 9.33932 1.63323 10.4826 1.10906L14.804 1.71437Z" fill="black" stroke="black"/>
+            </g>
+        <g version="1.1" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" viewBox="0 0 29.94 29.94" style="enable-background:new 0 0 29.94 29.94;"
+            xml:space="preserve">
+            <path d="M27.56,0.684H2.383C1.065,0.684,0,1.748,0,3.064v23.813c0,1.312,1.065,2.379,2.383,2.379H27.56
+		c1.312,0,2.38-1.066,2.38-2.379V3.064C29.939,1.748,28.871,0.684,27.56,0.684z M20.125,9.167c-0.619-0.362-1.11-0.648-1.727-0.648
+		c-0.604,0-1.12,0.151-1.384,0.405c-0.264,0.252-0.395,0.74-0.395,1.461v1.067h3.229l-0.699,2.968h-2.53v9.862h-4.056V14.42H10.67
+		v-2.968h1.895v-1.133c0-1.193,0.143-1.907,0.425-2.496c0.281-0.587,0.826-1.241,1.584-1.611c0.757-0.369,1.877-0.555,3.036-0.555
+		c1.188,0,2.116,0.396,3.254,0.715L20.125,9.167z" />
+        </g>
+        <g id="instagram" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </g>
+        <g id="discord" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+        </g>
+    </svg>
 </body>
+
 </html>

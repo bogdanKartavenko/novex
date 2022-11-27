@@ -1,0 +1,39 @@
+.form {
+    position: relative;
+    min-height: 52px;
+}
+
+.input {
+    position: absolute;
+    left: 0;
+    right: 7px;
+    background-color: $white1;
+    padding: 25px 100px 25px 24px;
+    height: 52px;
+    border-radius: 100px;
+    border: none;
+    padding: 0 150px 0 24px;
+}
+
+.input::placeholder {
+    font-family: $arimo-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $gray1;
+}
+
+.buttom {
+    position: absolute;
+    background-color: $gray3;
+    padding: 11px 28px;
+    border-radius: 50px;
+    right: 9px;
+    top: 2px;
+    font-family: $arimo-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: $white;
+    border: none
+}

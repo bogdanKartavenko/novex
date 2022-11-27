@@ -1,0 +1,78 @@
+.footer {
+    position: relative;
+    padding: 40px 20px 20px 20px;
+    background-color: $white2;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+
+    &__logo {
+        width: 111px;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: space-between;
+        max-width: 176px;
+        width: 100%;
+    }
+
+    &__img {
+        cursor: pointer;
+    }
+
+    &__border {
+        background-color: $black;
+        height: 1px;
+        margin-bottom: 80px;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 253px;
+        width: 100%;
+    }
+
+    &__data {
+        font-family: $inter-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $gray6;
+    }
+
+    &__link {
+        font-family: $inter-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: $black;
+        text-decoration: none;
+        transition: color 0.5s ease;
+    }
+
+    &__link:hover {
+        color: #44DCC1;
+    }
+
+    &__anchor {
+        position: absolute;
+        bottom: 10px;
+    }
+}
+
+.svg {
+    width: 24px;
+    height: 24px;
+    transition: 0.5s ease;
+}
+.svg:hover {
+    fill: #44DCC1;
+    color:#44DCC1;
+}
