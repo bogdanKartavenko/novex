@@ -53,28 +53,41 @@
         </div>
         <ul class="investors__box wrapper">
             <li class="investors__list">
-                <a href="https://bitbucket.org/"><img src="assets/bitbucket.svg" alt="bitbucket"></a>
+                <a href="https://bitbucket.org/"><img class="investors__img" src="assets/bitbucket.svg" alt="bitbucket"></a>
             </li>
             <li class="investors__list">
-                <a href="https://azure.microsoft.com/ru-ru/"><img src="assets/microsoft.svg" alt="microsoft"></a>
+                <a href="https://azure.microsoft.com/ru-ru/"><img class="investors__img" src="assets/microsoft.svg" alt="microsoft"></a>
             </li>
             <li class="investors__list">
-                <a href=""><img src="assets/bamboo.svg" alt="bamboo"></a>
+                <a href=""><img class="investors__img" src="assets/bamboo.svg" alt="bamboo"></a>
             </li>
             <li class="investors__list">
-                <a href="https://ru.wikipedia.org/wiki/Confluence"><img src="assets/confluence.svg"
+                <a href="https://ru.wikipedia.org/wiki/Confluence"><img class="investors__img" src="assets/confluence.svg"
                         alt="confluence"></a>
             </li>
-        </ul>
-        <ul class="investors__box--bottom wrapper">
             <li class="investors__list">
-                <a href="https://www.atlassian.com/"><img src="assets/atlassian.svg" alt="atlassian"></a>
+                <a href="https://www.atlassian.com/"><img class="investors__img" src="assets/atlassian.svg" alt="atlassian"></a>
             </li>
             <li class="investors__list">
-                <a href="https://www.pioneer.eu/"><img src="assets/pioneer.svg" alt="pioneer"></a>
+                <a href="https://www.pioneer.eu/"><img class="investors__img" src="assets/pioneer.svg" alt="pioneer"></a>
             </li>
             <li class="investors__list">
-                <a href="https://stackoverflow.com/"><img src="assets/stackOverflow.svg" alt="stackOverflow"></a>
+                <a href="https://stackoverflow.com/"><img class="investors__img" src="assets/stackOverflow.svg" alt="stackOverflow"></a>
+            </li>
+            <li class="investors__list">
+                <a href=""><img class="investors__img" src="assets/bamboo.svg" alt="bamboo"></a>
+            </li>
+            <li class="investors__list">
+                <a href=""><img class="investors__img" src="assets/intelliJIDEA.svg" alt="bamboo"></a>
+            </li>
+            <li class="investors__list">
+                <a href=""><img class="investors__img" src="assets/topcon.svg" alt="bamboo"></a>
+            </li>
+            <li class="investors__list">
+                <a href=""><img class="investors__img" src="assets/windercinder.svg" alt="bamboo"></a>
+            </li>
+            <li class="investors__list">
+                <a href=""><img class="investors__img" src="assets/sitecore.svg" alt="bamboo"></a>
             </li>
         </ul>
     </section>
@@ -147,35 +160,33 @@
                 <li class="footer__list">
                     <a class="footer__link" href="https://twitter.com/">
                         <svg class="svg">
-                            <use class="svg__use" href="#instagram"/>
+                            <use class="svg__use" href="#instagram" />
                         </svg>
                     </a>
                 </li>
                 <li class="footer__list">
                     <a class="footer__link" href="https://www.facebook.com/">
                         <svg class="svg">
-                            <use class="svg__use" href="#instagram"/>
+                            <use class="svg__use" href="#instagram" />
                         </svg>
                     </a>
                 </li>
                 <li class="footer__list">
                     <a class="footer__link" href="https://www.instagram.com/">
                         <svg class="svg">
-                            <use class="svg__use" href="#instagram"/>
+                            <use class="svg__use" href="#instagram" />
                         </svg>
                     </a>
                 </li>
                 <li class="footer__list">
                     <a class="footer__link" href="https://discord.com/">
                         <svg class="svg">
-                            <use class="svg__use" href="#instagram"/>
+                            <use class="svg__use" href="#instagram" />
                         </svg>
                     </a>
                 </li>
             </ul>
-        </div>
-        <div class="footer__border wrapper"></div>
-        <div class="footer__wrapper wrapper">
+            <div class="footer__border wrapper"></div>
             <span class="footer__data">Copyrighting Novex 2022</span>
             <ul class="footer__menu">
                 <li class="footer__list">
@@ -189,15 +200,32 @@
                 </li>
             </ul>
         </div>
+        <!-- <div class="footer__border wrapper"></div> -->
+        <!-- <div class="footer__wrapper wrapper">
+            <span class="footer__data">Copyrighting Novex 2022</span>
+            <ul class="footer__menu">
+                <li class="footer__list">
+                    <a class="footer__link" href="#">Blog</a>
+                </li>
+                <li class="footer__list">
+                    <a class="footer__link" href="#">Careers</a>
+                </li>
+                <li class="footer__list">
+                    <a class="footer__link" href="#">Terms</a>
+                </li>
+            </ul>
+        </div> -->
         <p class="footer__anchor"><a name="anchor"></a></p>
     </footer>
 
     <!-- SVG -->
 
     <svg style="display: none;">
-        <g id="twitter"  xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.804 1.71437C14.5964 1.79637 14.3494 1.86362 14.0797 1.83273C13.7746 1.79778 13.5139 1.64686 13.2861 1.41537C12.9726 1.09881 12.5286 0.933529 11.9957 0.863083C11.9784 0.861112 11.9638 0.85876 11.9547 0.857236C11.9423 0.85516 11.9301 0.852875 11.9211 0.851179C11.9175 0.850503 11.9141 0.849859 11.9108 0.849243C11.8955 0.846345 11.8834 0.844038 11.8693 0.841668C11.8361 0.836091 11.8099 0.833374 11.7888 0.833374C11.6128 0.833374 11.5552 0.839173 11.3233 0.863811C10.9693 0.901417 10.7839 0.971039 10.4827 1.10902L14.804 1.71437ZM14.804 1.71437C14.6937 1.81391 14.5744 1.90773 14.4462 1.9961L14.0643 2.25927L14.2894 2.64486C14.2918 2.65033 14.2955 2.65845 14.2995 2.66697C14.3055 2.67968 14.3147 2.69804 14.3268 2.71887L14.5217 3.05278L14.8939 2.94821C14.9371 2.93607 14.9803 2.92393 15.0235 2.91179C14.9303 2.99326 14.8343 3.07171 14.7354 3.14714C14.65 3.21226 14.5537 3.30468 14.4868 3.43943C14.4188 3.57628 14.4027 3.7131 14.4061 3.8321L14.4061 3.83221C14.4435 5.12974 14.2092 6.37478 13.7211 7.57501C12.9065 9.57513 11.6321 11.1393 9.77922 12.116C7.42997 13.3535 5.02697 13.4851 2.57921 12.5785C3.69801 12.3844 4.74773 11.9164 5.72697 11.1557L6.72403 10.381L5.46697 10.263C4.79527 10.1999 4.26559 10.001 3.85018 9.68569C3.6007 9.49631 3.38133 9.25648 3.19419 8.95969C3.34577 8.94754 3.50409 8.92665 3.64438 8.90813C3.71264 8.89912 3.77663 8.89068 3.8335 8.88408L4.27585 8.83273V8.38741C4.27585 8.38643 4.27585 8.3853 4.27586 8.38402C4.27593 8.36403 4.27613 8.30747 4.26306 8.24026L4.20257 7.92932L3.89559 7.85118C3.26014 7.68945 2.7442 7.35912 2.345 6.83905C2.09789 6.51714 1.92657 6.17038 1.83195 5.79035C2.17446 5.89661 2.45724 5.93673 2.72736 5.89559L3.89617 5.71757L2.95429 5.00296C1.82923 4.14937 1.61052 2.86009 1.86518 1.8903C3.62486 3.74019 5.80162 4.77983 8.40397 4.96616L9.01602 5.00998L8.93534 4.40169C8.93096 4.36866 8.92797 4.34052 8.92492 4.31093L8.92418 4.30376C8.92148 4.27743 8.91802 4.2438 8.91338 4.21037L8.91237 4.20314L8.91116 4.19594C8.6917 2.89624 9.33932 1.63323 10.4826 1.10906L14.804 1.71437Z" fill="black" stroke="black"/>
-            </g>
+        <g id="twitter" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M14.804 1.71437C14.5964 1.79637 14.3494 1.86362 14.0797 1.83273C13.7746 1.79778 13.5139 1.64686 13.2861 1.41537C12.9726 1.09881 12.5286 0.933529 11.9957 0.863083C11.9784 0.861112 11.9638 0.85876 11.9547 0.857236C11.9423 0.85516 11.9301 0.852875 11.9211 0.851179C11.9175 0.850503 11.9141 0.849859 11.9108 0.849243C11.8955 0.846345 11.8834 0.844038 11.8693 0.841668C11.8361 0.836091 11.8099 0.833374 11.7888 0.833374C11.6128 0.833374 11.5552 0.839173 11.3233 0.863811C10.9693 0.901417 10.7839 0.971039 10.4827 1.10902L14.804 1.71437ZM14.804 1.71437C14.6937 1.81391 14.5744 1.90773 14.4462 1.9961L14.0643 2.25927L14.2894 2.64486C14.2918 2.65033 14.2955 2.65845 14.2995 2.66697C14.3055 2.67968 14.3147 2.69804 14.3268 2.71887L14.5217 3.05278L14.8939 2.94821C14.9371 2.93607 14.9803 2.92393 15.0235 2.91179C14.9303 2.99326 14.8343 3.07171 14.7354 3.14714C14.65 3.21226 14.5537 3.30468 14.4868 3.43943C14.4188 3.57628 14.4027 3.7131 14.4061 3.8321L14.4061 3.83221C14.4435 5.12974 14.2092 6.37478 13.7211 7.57501C12.9065 9.57513 11.6321 11.1393 9.77922 12.116C7.42997 13.3535 5.02697 13.4851 2.57921 12.5785C3.69801 12.3844 4.74773 11.9164 5.72697 11.1557L6.72403 10.381L5.46697 10.263C4.79527 10.1999 4.26559 10.001 3.85018 9.68569C3.6007 9.49631 3.38133 9.25648 3.19419 8.95969C3.34577 8.94754 3.50409 8.92665 3.64438 8.90813C3.71264 8.89912 3.77663 8.89068 3.8335 8.88408L4.27585 8.83273V8.38741C4.27585 8.38643 4.27585 8.3853 4.27586 8.38402C4.27593 8.36403 4.27613 8.30747 4.26306 8.24026L4.20257 7.92932L3.89559 7.85118C3.26014 7.68945 2.7442 7.35912 2.345 6.83905C2.09789 6.51714 1.92657 6.17038 1.83195 5.79035C2.17446 5.89661 2.45724 5.93673 2.72736 5.89559L3.89617 5.71757L2.95429 5.00296C1.82923 4.14937 1.61052 2.86009 1.86518 1.8903C3.62486 3.74019 5.80162 4.77983 8.40397 4.96616L9.01602 5.00998L8.93534 4.40169C8.93096 4.36866 8.92797 4.34052 8.92492 4.31093L8.92418 4.30376C8.92148 4.27743 8.91802 4.2438 8.91338 4.21037L8.91237 4.20314L8.91116 4.19594C8.6917 2.89624 9.33932 1.63323 10.4826 1.10906L14.804 1.71437Z"
+                fill="black" stroke="black" />
+        </g>
         <g version="1.1" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 29.94 29.94" style="enable-background:new 0 0 29.94 29.94;"
             xml:space="preserve">

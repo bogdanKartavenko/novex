@@ -29,7 +29,8 @@
     .question {
         text-align: center;
         &__img {
-            margin: 30px auto 0 auto;
+            max-width: 237px;
+            margin: 30px auto 30px auto;
         }
         &__box {
             margin: 0 auto;

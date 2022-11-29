@@ -26,10 +26,14 @@
     &__link {
         color: $gray3;
         text-decoration: none;
+        transition: 0.5s ease;
+        &:hover {
+            color: $color;
+        }
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .nav {
         padding-bottom: 59px;
 

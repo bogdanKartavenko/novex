@@ -1,20 +1,24 @@
 .footer {
     position: relative;
-    padding: 40px 20px 20px 20px;
+    padding: 0px 20px 0px 20px;
     background-color: $white2;
 
     &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 36px;
+        position: relative;
+        min-height: 239px;
     }
 
     &__logo {
+        position: absolute;
+        top: 43px;
+        left: 0;
         width: 111px;
     }
 
     &__icon {
+        position: absolute;
+        top: 43px;
+        right: 0;
         display: flex;
         justify-content: space-between;
         max-width: 176px;
@@ -26,12 +30,17 @@
     }
 
     &__border {
+        position: absolute;
+        top: 92px;
         background-color: $black;
         height: 1px;
         margin-bottom: 80px;
     }
 
     &__menu {
+        position: absolute;
+        bottom: 40px;
+        right: 0;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -40,6 +49,9 @@
     }
 
     &__data {
+        position: absolute;
+        left: 0;
+        bottom: 40px;
         font-family: $inter-font;
         font-weight: 400;
         font-size: 16px;
@@ -72,7 +84,21 @@
     height: 24px;
     transition: 0.5s ease;
 }
+
 .svg:hover {
     fill: #44DCC1;
-    color:#44DCC1;
+    color: #44DCC1;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        // position: static;
+        padding-top: 68px;
+        &__wrapper {
+            position: static;
+            justify-content: center;
+            align-items:center;
+        }
+    }
+
 }

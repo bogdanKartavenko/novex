@@ -48,6 +48,13 @@
         color: $white;
         border: none;
         cursor: pointer;
+        transition: 0.5s ease;
+        &:hover {
+            background-color: $color;
+        }
+        &:focus {
+            outline: 1px solid $color;
+        }
     }
 
     &__list {
@@ -104,6 +111,7 @@
         padding: 0;
 
         &__wrapper {
+            overflow: hidden;
             padding: 131px 0 216px;
         }
 
