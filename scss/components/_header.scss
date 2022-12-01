@@ -49,11 +49,6 @@
     }
 }
 
-.anchor__wrapper {
-    position: relative;
-    bottom: -132px;
-}
-
 @media screen and (max-width: 800px) {
     .header {
         background-image: url(assets/BGHeaderMobil.png);
@@ -67,10 +62,5 @@
         &__subtitle {
             margin-bottom: 26px;
         }
-
-    }
-
-    .anchor__wrapper {
-        display: none;
     }
 }
