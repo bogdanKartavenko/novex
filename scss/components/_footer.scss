@@ -59,6 +59,12 @@
         line-height: 160%;
         color: $gray6;
     }
+    &__list {
+        &:hover .svg__use {
+            fill: #44DCC1;
+            stroke: #44DCC1;
+        }
+    }
 
     &__link {
         font-family: $inter-font;
@@ -81,14 +87,13 @@
 }
 
 .svg {
-    width: 24px;
-    height: 24px;
-    transition: 0.5s ease;
-}
-
-.svg:hover {
-    fill: #44DCC1;
-    color: #44DCC1;
+    width: 20px;
+    height: 20px;
+    &__use {
+        transition: all 0.5s ease;
+        fill: black;
+        stroke: black;
+    }
 }
 
 @media screen and (max-width: 600px) {

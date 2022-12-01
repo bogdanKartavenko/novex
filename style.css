@@ -502,9 +502,6 @@ textarea {
   border-radius: 100px;
   transition: outline 0.5s ease;
 }
-.form:hover {
-  outline: 1px solid #292929;
-}
 
 .input {
   position: absolute;
@@ -517,6 +514,9 @@ textarea {
   border: none;
   padding: 0 150px 0 24px;
   outline: none;
+}
+.input:hover {
+  outline: 1px solid #292929;
 }
 .input:focus {
   outline: 1px solid #44DCC1;
@@ -910,6 +910,10 @@ textarea {
   line-height: 160%;
   color: #797979;
 }
+.footer__list:hover .svg__use {
+  fill: #44DCC1;
+  stroke: #44DCC1;
+}
 .footer__link {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -928,14 +932,13 @@ textarea {
 }
 
 .svg {
-  width: 24px;
-  height: 24px;
-  transition: 0.5s ease;
+  width: 20px;
+  height: 20px;
 }
-
-.svg:hover {
-  fill: #44DCC1;
-  color: #44DCC1;
+.svg__use {
+  transition: all 0.5s ease;
+  fill: black;
+  stroke: black;
 }
 
 @media screen and (max-width: 600px) {
