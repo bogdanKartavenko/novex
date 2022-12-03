@@ -22,7 +22,7 @@
     position: relative;
     max-width: 1060px;
     width: 100%;
-    margin: 0 auto;
+    @include push--auto;
 }
 
 .anchor {
@@ -31,6 +31,7 @@
     border-radius: 100px;
     background-color: #292929;
     cursor: pointer;
+    margin-top: 132px;
 
     &__link {
         border-radius: 100px;
@@ -40,9 +41,11 @@
         justify-content: center;
         align-items: center;
         transition: background-color 0.5s ease;
+
         &:hover {
             background-color: #44DCC1;
         }
+
         &:focus {
             outline: 1px solid #44DCC1;
         }
@@ -53,12 +56,15 @@
     .header {
         background-image: url(assets/BGHeaderMobil.png);
         text-align: center;
-&__box {
-    margin: 0 auto;
-}
+
+        &__box {
+            @include push--auto;
+        }
+
         &__title {
             margin-bottom: 32px;
         }
+
         &__subtitle {
             margin-bottom: 26px;
         }

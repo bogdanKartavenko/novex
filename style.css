@@ -367,7 +367,8 @@ textarea {
   position: relative;
   max-width: 1060px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .anchor {
@@ -376,6 +377,7 @@ textarea {
   border-radius: 100px;
   background-color: #292929;
   cursor: pointer;
+  margin-top: 132px;
 }
 .anchor__link {
   border-radius: 100px;
@@ -399,7 +401,8 @@ textarea {
     text-align: center;
   }
   .header__box {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header__title {
     margin-bottom: 32px;
@@ -621,6 +624,7 @@ textarea {
 }
 .question__wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -632,6 +636,9 @@ textarea {
 .question__box {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
   max-width: 420px;
   width: 100%;
 }
@@ -652,14 +659,17 @@ textarea {
     margin: 30px auto 30px auto;
   }
   .question__box {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .question__title {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
   }
   .question__subtitle {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 40px;
   }
 }
@@ -738,7 +748,8 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .also__title {
   text-align: center;
@@ -857,10 +868,17 @@ textarea {
 }
 .footer__wrapper {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 .footer__box {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
   width: 50%;
 }
 .footer__box:nth-child(2), .footer__box:nth-child(5) {
@@ -869,13 +887,19 @@ textarea {
 .footer__box:nth-child(4) {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
 }
 .footer__logo {
   width: 111px;
 }
 .footer__icon {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
   max-width: 176px;
   width: 100%;
 }
@@ -890,7 +914,9 @@ textarea {
 }
 .footer__menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
   max-width: 253px;
   width: 100%;
@@ -926,12 +952,15 @@ textarea {
 .svg {
   width: 20px;
   height: 20px;
-  padding: 3px;
+  transition: fill 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
 }
-.svg__use {
-  transition: all 0.5s ease;
-  fill: black;
-  stroke: black;
+.svg:hover {
+  fill: #44DCC1;
 }
 
 @media screen and (max-width: 600px) {
@@ -941,12 +970,6 @@ textarea {
   .footer__border {
     display: none;
   }
-  .footer__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .footer__icon {
     margin: 0 auto;
   }
@@ -954,7 +977,8 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 40px;
   }
   .footer__list {
@@ -964,6 +988,8 @@ textarea {
     margin-bottom: 0;
   }
   .footer__data {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 24px;
   }
   .footer__border--data {

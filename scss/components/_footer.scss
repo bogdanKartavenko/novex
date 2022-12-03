@@ -4,21 +4,20 @@
     background-color: $white2;
 
     &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        @include flex (flex-start, stretch, row, wrap)
     }
 
     &__box {
-        display: flex;
+        @include flex;
         width: 50%;
 
         &:nth-child(2),
         &:nth-child(5) {
             justify-content: end;
         }
+
         &:nth-child(4) {
-            display: flex;
-            flex-direction: column;
+            @include flex (flex-start, stretch, column)
         }
     }
 
@@ -27,8 +26,7 @@
     }
 
     &__icon {
-        display: flex;
-        justify-content: space-between;
+        @include flex (space-between);
         max-width: 176px;
         width: 100%;
     }
@@ -45,9 +43,7 @@
     }
 
     &__menu {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        @include flex (space-between, stretch, row, wrap);
         max-width: 253px;
         width: 100%;
     }
@@ -59,6 +55,7 @@
         line-height: 160%;
         color: $gray6;
     }
+
     &__list {
         &:hover .svg__use {
             fill: #44DCC1;
@@ -89,11 +86,11 @@
 .svg {
     width: 20px;
     height: 20px;
-    padding: 3px;
-    &__use {
-        transition: all 0.5s ease;
-        fill: black;
-        stroke: black;
+    transition: fill 0.5s ease;
+    @include flex;
+
+    &:hover {
+        fill: $color;
     }
 }
 
@@ -105,36 +102,37 @@
             display: none;
         }
 
-        &__wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
         &__icon {
             margin: 0 auto;
         }
+
         &__menu {
             display: flex;
             flex-direction: column;
-            align-items:center;
-            margin: 0 auto;
+            align-items: center;
+            @include push--auto;
             margin-bottom: 40px;
         }
+
         &__list {
             margin-bottom: 16px;
+
             &:nth-child(3) {
                 margin-bottom: 0;
             }
         }
+
         &__data {
+            @include push--auto;
             margin-top: 24px;
         }
+
         &__border--data {
             width: 100%;
             height: 1px;
             background-color: $black;
         }
+
         &__box {
             width: 100%;
             display: flex;
