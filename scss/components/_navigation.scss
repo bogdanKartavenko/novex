@@ -35,7 +35,8 @@
 
 @media screen and (max-width: 800px) {
     .nav {
-        padding-bottom: 59px;
+        padding: 42px 0 59px;
+        margin-bottom: 0;
 
         &__menu {
             max-width: 114px;

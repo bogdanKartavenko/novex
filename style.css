@@ -352,6 +352,9 @@ textarea {
   min-height: 100vh;
   padding: 0 20px 20px 20px;
 }
+.header__img {
+  display: none;
+}
 .header__title {
   margin-bottom: 30px;
 }
@@ -400,6 +403,12 @@ textarea {
     background-image: url(assets/BGHeaderMobil.png);
     text-align: center;
   }
+  .header__img {
+    display: flex;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .header__box {
     margin-left: auto;
     margin-right: auto;
@@ -409,6 +418,9 @@ textarea {
   }
   .header__subtitle {
     margin-bottom: 26px;
+  }
+  .anchor {
+    display: none;
   }
 }
 .nav {
@@ -444,7 +456,8 @@ textarea {
 
 @media screen and (max-width: 800px) {
   .nav {
-    padding-bottom: 59px;
+    padding: 42px 0 59px;
+    margin-bottom: 0;
   }
   .nav__menu {
     max-width: 114px;
@@ -491,6 +504,14 @@ textarea {
   color: #6E6E6E;
 }
 
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+}
 .form {
   position: relative;
   min-height: 52px;
@@ -589,7 +610,7 @@ textarea {
   margin-right: 170px;
   margin-bottom: 0;
 }
-.investors__list:nth-child(8), .investors__list:nth-child(9), .investors__list:nth-child(10), .investors__list:nth-child(11), .investors__list:nth-child(12) {
+.investors__box--mobil {
   display: none;
 }
 
@@ -598,25 +619,22 @@ textarea {
     padding: 41px 20px 100px 20px;
   }
   .investors__box {
+    display: none;
+  }
+  .investors__box--mobil {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .investors__img {
-    width: 106px;
-  }
   .investors__list {
     width: 50%;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .investors__list:nth-child(5) {
     margin-left: 0;
   }
   .investors__list:nth-child(7) {
     margin-right: 0;
-  }
-  .investors__list:nth-child(8), .investors__list:nth-child(9), .investors__list:nth-child(10), .investors__list:nth-child(11), .investors__list:nth-child(12) {
-    display: flex;
   }
 }
 .question {

@@ -4,6 +4,9 @@
     min-height: 100vh;
     padding: 0 20px 20px 20px;
 
+    &__img {
+        display: none;
+    }
     &__title {
         margin-bottom: 30px;
     }
@@ -57,6 +60,11 @@
         background-image: url(assets/BGHeaderMobil.png);
         text-align: center;
 
+        &__img {
+            display: flex;
+            margin-top: 70px;
+            @include push--auto;
+        }
         &__box {
             @include push--auto;
         }
@@ -68,5 +76,8 @@
         &__subtitle {
             margin-bottom: 26px;
         }
+    }
+    .anchor {
+        display: none;
     }
 }
