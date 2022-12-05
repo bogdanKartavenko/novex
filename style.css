@@ -627,14 +627,15 @@ textarea {
     flex-wrap: wrap;
   }
   .investors__list {
-    width: 50%;
+    width: 40%;
+    margin-right: 10%;
     margin-bottom: 10px;
   }
   .investors__list:nth-child(5) {
     margin-left: 0;
   }
   .investors__list:nth-child(7) {
-    margin-right: 0;
+    margin-right: 10%;
   }
 }
 .question {
